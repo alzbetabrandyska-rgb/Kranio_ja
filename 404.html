@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stránka nenalezena – Alžběta Brandýská</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Web Awesome (for wa-icon) -->
+  <link rel="stylesheet" href="https://early.webawesome.com/webawesome@2.0.0-alpha.10/dist/styles/themes/default.css">
+  <script type="module" src="https://early.webawesome.com/webawesome@2.0.0-alpha.10/dist/webawesome.loader.js"></script>
+
+  <style>
+    .err-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--c-bg);
+      padding: var(--sp-6);
+      text-align: center;
+    }
+    .err-box { max-width: 440px; }
+    .err-icon {
+      font-size: 5rem;
+      color: var(--c-text-light);
+      opacity: .45;
+      margin-bottom: var(--sp-4);
+      display: flex;
+      justify-content: center;
+    }
+    .err-box h1 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: var(--sp-3);
+    }
+    .err-box p {
+      color: var(--c-text-light);
+      margin-bottom: var(--sp-5);
+    }
+  </style>
+</head>
+<body>
+  <div class="err-page">
+    <div class="err-box">
+      <div class="err-icon" aria-hidden="true">
+        <wa-icon name="face-frown" variant="regular"></wa-icon>
+      </div>
+      <h1>Stránka nenalezena</h1>
+      <p>Tato stránka bohužel neexistuje nebo byla přesunuta.</p>
+      <a href="/" class="btn btn-primary">
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+        Zpět na hlavní stránku
+      </a>
+    </div>
+  </div>
+
+  <!-- Font Awesome fallback for button icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+</body>
+</html>
