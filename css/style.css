@@ -474,7 +474,7 @@ p:last-child { margin-bottom: 0; }
   align-items: start;
   gap: var(--sp-4);
 }
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .price-card { grid-template-columns: 1fr; }
   .price-amount { text-align: left; }
 }
