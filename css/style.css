@@ -170,6 +170,15 @@ p:last-child { margin-bottom: 0; }
   box-shadow: 0 8px 28px rgba(184,92,56,.40);
 }
 .btn-sm { padding: 10px 22px; font-size: .9rem; }
+.btn-outline {
+  background: transparent;
+  color: var(--c-text);
+  border: 1px solid rgba(0,0,0,.18);
+}
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  background: var(--c-bg);
+}
 
 /* ============================================================
    Navigation

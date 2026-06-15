@@ -106,12 +106,18 @@ document.querySelectorAll('.review-more-btn').forEach(btn => {
 /* ── Cookie banner ── */
 const cookieBanner = document.getElementById('cookie-banner');
 const cookieOk     = document.getElementById('cookie-ok');
+const cookieReject = document.getElementById('cookie-reject');
 
 if (!localStorage.getItem('ck')) {
   cookieBanner.removeAttribute('hidden');
 }
 
 cookieOk.addEventListener('click', () => {
-  localStorage.setItem('ck', '1');
+  localStorage.setItem('ck', 'accepted');
+  cookieBanner.setAttribute('hidden', '');
+});
+
+cookieReject.addEventListener('click', () => {
+  localStorage.setItem('ck', 'rejected');
   cookieBanner.setAttribute('hidden', '');
 });
