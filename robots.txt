@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: https://kranioeli.lehkydotek.cz/sitemap.xml
+Sitemap: https://lehkydotek.cz/sitemap.xml

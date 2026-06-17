@@ -5,11 +5,11 @@ Jednostránkový prezentační web kraniosakrální terapeutky Alžběty Brandý
 
 ## Poskytovatel
 Bc. Alžběta Brandýská
-IČ: doplnit
-Zápis v rejstříku: doplnit
+IČ: 11793155
+Zápis v rejstříku: fyzická osoba zapsaná v živnostenském rejstříku od 1. 10. 2021
 
 ## Služby
-- Kraniosakrální terapie (60–70 minut) – 900 Kč
+- Kraniosakrální terapie (cca 90 minut) – 1 400 Kč
 
 ## Místa poskytování
 - Telecí 187, 569 94 Telecí
@@ -20,4 +20,4 @@ Zápis v rejstříku: doplnit
 - E-mail: jarmila.alzbeta@seznam.cz
 
 ## Web
-https://kraniosakralni-brandyska.cz/
+https://lehkydotek.cz/

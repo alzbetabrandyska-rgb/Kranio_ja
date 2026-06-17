@@ -253,3 +253,53 @@ Těším se na setkání s vámi.
 
 📞 605 191 772
 ✉️ jarmila.alzbeta@seznam.cz
+
+---
+
+## CSS jako design systém
+
+*Konzultace: Jan Baďura*
+
+### 1. Struktura CSS
+
+- Veškeré styly zapisuj výhradně do `style.css`.
+- CSS musí být hlavní zdroj stylování pro celý web.
+- Nepoužívej inline styly ani `<style>` bloky v HTML (výjimky jen s jasným zdůvodněním kritického CSS).
+
+### 2. Povinný design systém (na začátku projektu)
+
+Vytvoř v `style.css` základní systém proměnných:
+
+**Barvy (CSS variables)**
+Definuj: `primary`, `secondary`, `background`, `text`, `muted`, `accent`
+
+**Spacing systém**
+Používej škálu: 4 px, 8 px, 12 px, 16 px, 24 px, 32 px, 48 px, 64 px — nikdy nevymýšlej náhodné hodnoty.
+
+**Typografie**
+Definuj: base font size, h1–h6 hierarchii, line-height pravidla. Používej konzistentní škálování (např. ratio 1.25).
+
+**Layout pravidla**
+Definuj: container max-width, grid systém (např. 12 sloupců nebo flex), breakpointy (mobile-first).
+
+### 3. Tvorba komponent
+
+Každý prvek webu navrhuj jako komponentu: button, navbar, card, form, section, hero.
+
+Každá komponenta musí:
+- být znovupoužitelná
+- nemít pevně zakódované hodnoty
+- používat design tokeny (barvy, spacing, fonty)
+
+### 4. CSS disciplína
+
+- Nepiš jednorázové styly pro konkrétní HTML prvek.
+- Nepoužívej nadměrnou specifitu (žádné zbytečné `!important`).
+- CSS musí být škálovatelné pro budoucí rozšíření webu.
+
+### 5. Cíl systému
+
+Výsledkem musí být:
+- konzistentní design napříč celým webem
+- snadná změna vzhledu změnou pár proměnných
+- čisté HTML bez stylů
