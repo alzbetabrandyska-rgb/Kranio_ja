@@ -1,10 +1,3 @@
-# Redirect www → non-www
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{HTTP_HOST} ^www\.lehkydotek\.cz [NC]
-    RewriteRule ^(.*)$ https://lehkydotek.cz/$1 [R=301,L]
-</IfModule>
-
 # Security Headers
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
