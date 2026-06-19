@@ -1,6 +1,8 @@
-# Redirect www → non-www
+# Redirect HTTP → HTTPS + www → non-www
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://lehkydotek.cz/$1 [R=301,L]
     RewriteCond %{HTTP_HOST} ^www\.lehkydotek\.cz [NC]
     RewriteRule ^(.*)$ https://lehkydotek.cz/$1 [R=301,L]
 </IfModule>
