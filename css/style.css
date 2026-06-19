@@ -319,6 +319,9 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 900px) {
   .hero-inner { grid-template-columns: 1fr 1fr; }
 }
+@media (min-width: 900px) and (max-width: 1199px) {
+  .hero-inner { align-items: flex-start; }
+}
 
 .hero-text {
   display: flex;
