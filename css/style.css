@@ -364,6 +364,7 @@ p:last-child { margin-bottom: 0; }
   .collage .c4 { display: none; }
 }
 .c-item { overflow: hidden; border-radius: var(--r-md); }
+.c-item picture { display: block; width: 100%; height: 100%; }
 .c-big  { grid-row: span 2; }
 .c-img  {
   width: 100%; height: 100%;
@@ -1093,6 +1094,41 @@ p:last-child { margin-bottom: 0; }
   color: var(--c-text-light);
   font-style: normal;
   letter-spacing: .04em;
+}
+
+/* ============================================================
+   Mobile optimizations (< 600px)
+   ============================================================ */
+@media (max-width: 599px) {
+  /* Section images – výška přiměřená mobilu */
+  .sec-img { height: 260px; }
+
+  /* Section header – menší odsazení pod nadpisem */
+  .section-header { margin-bottom: var(--sp-6); }
+
+  /* Two-col – menší mezera mezi skládanými bloky */
+  .two-col { gap: var(--sp-4); }
+
+  /* Hero collage – trochu vyšší řádky na malých telefonech */
+  .collage { grid-template-rows: 180px 180px; }
+
+  /* Price card – menší padding */
+  .price-card { padding: var(--sp-4); gap: var(--sp-3); }
+
+  /* Helps card – menší padding */
+  .helps-card { padding: var(--sp-4); }
+
+  /* Kontaktní sekce – reset záporného marginu portrétu */
+  .fc-person { margin-top: 0; }
+
+  /* Cookie banner – plná šířka s menším paddingem */
+  .cookie-banner { padding: var(--sp-3); }
+
+  /* Quote section – menší padding */
+  .quote-section { padding: 64px var(--sp-3); }
+
+  /* Butterfly divider – kratší linky na mobilu */
+  .sbd-line, .quote-divider-line { max-width: 60px; }
 }
 
 @media print {
