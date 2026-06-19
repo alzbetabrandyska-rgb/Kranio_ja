@@ -319,9 +319,6 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 900px) {
   .hero-inner { grid-template-columns: 1fr 1fr; }
 }
-@media (min-width: 900px) and (max-width: 1199px) {
-  .hero-inner { align-items: flex-start; }
-}
 
 .hero-text {
   display: flex;
@@ -361,8 +358,8 @@ p:last-child { margin-bottom: 0; }
   grid-template-rows: 185px 185px 185px;
   gap: 10px;
 }
-@media (max-width: 899px) {
-  .collage { grid-template-rows: 160px 160px; }
+@media (max-width: 1366px) {
+  .collage { grid-template-rows: 185px 185px; }
   .collage .c-item.c5 { display: none; }
   .collage .c-item.c4 { display: none; }
 }
