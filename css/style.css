@@ -360,8 +360,8 @@ p:last-child { margin-bottom: 0; }
 }
 @media (max-width: 899px) {
   .collage { grid-template-rows: 160px 160px; }
-  .collage .c5 { display: none; }
-  .collage .c4 { display: none; }
+  .collage .c-item.c5 { display: none; }
+  .collage .c-item.c4 { display: none; }
 }
 .collage .c-item { display: block; overflow: hidden; border-radius: var(--r-md); }
 .collage .c-item picture { display: block; width: 100%; height: 100%; }
